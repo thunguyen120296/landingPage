@@ -43,6 +43,7 @@ h3{
     font-size: 1.5em;
     font-weight: 700;
 }
+
 /* menu */
 .menu__bg{
     background-color: var(--white-color);
@@ -103,6 +104,30 @@ h3{
     background-color: var(--primary-color);
 }
 
+/* media */
+@media screen and (max-width: 768px) {
+    #home{
+        flex-direction: column;
+    }
+    .skill,
+    .section-center{
+        grid-template-columns: 1fr 1fr;
+    }
+    .filter-btn{
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill,
+    .section-center{
+        grid-template-columns: 1fr;
+    }
+    .filter-btn{
+        margin-top: 8px;
+        margin-right: 0;
+    }
+}
 /* Animation */
 @keyframes shadow-drop-br{
     0%{
